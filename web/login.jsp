@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : login
     Created on : 04/09/2019, 17:26:29
     Author     : gutol
@@ -13,8 +13,9 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+       <div class="container">
         <h1>Entrar no Sistema</h1>
-        
+
         <form action="Login" method="post">
           <div class="form-group">
             <label for="exampleInputEmail1">Email:</label>
@@ -26,7 +27,7 @@
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-        
+       </div>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>

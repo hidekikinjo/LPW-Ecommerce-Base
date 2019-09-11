@@ -1,4 +1,4 @@
-<%-- 
+ <%--
     Document   : index
     Created on : 21/08/2019, 17:26:44
     Author     : gutol
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
-        
+
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -23,9 +23,9 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="index.jsp">Ofertas</a></li>
               <li><a href="produtos.jsp">Produtos</a></li>
-              <li><a href="sobre.jsp">Sobre</a></li>            
+              <li><a href="sobre.jsp">Sobre</a></li>
             </ul>
- 
+
 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="login.jsp">Entrar</a></li>
@@ -33,30 +33,31 @@
             </ul>
 
           </div>
-            
+
         </nav>
-        
-        <h1>Hello World!</h1>
-        
-        <form action="AddProduto" method="post">
-            Descrição: <input name="descricao">
-            Preço: <input name="preco">
-            
-            <button type="submit">OK</button>
-        </form>
-        
+       <div class="container">
+        <h1>Ofertas da Loja!</h1>
+
         <%
             for(int i=0; i<Produto.getLista().size(); i++){
-                
-                Produto p = Produto.getLista().get(i);
-                
+               Produto p = Produto.getLista().get(i);
+               if(i%4==0) { %>
+               <div classe="row">
+                  <%}
+
+
+
                 out.println("<pre> "+ p.getDescricao() +" </pre>");
-            
+                if(i%4==0) { %>
+
+               </div>
+                <%}
             }
-        
+
         %>
-        
-        
+
+
         <script src="js/bootstrap.min.js"></script>
+       </div>
     </body>
 </html>
