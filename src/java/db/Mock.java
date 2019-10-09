@@ -6,7 +6,9 @@ import modelos.Usuario;
 
 public class Mock {
 
-   public static void makeMoke() {
+   private static String https;
+
+   public static void makeMock() {
       createUsers ();
       createProducts();
 
@@ -39,6 +41,7 @@ public class Mock {
          Produto caneta = new Produto ();
          caneta.setDescricao("Caneta Bic");
          caneta.setPreco (8.5f);
+         caneta.setImagem ("https://www.noffice.com.br/wp-content/uploads/2019/08/caneta-esferografica-bic-07-azul-600x600.jpg");
          caneta.setOferta (true);
          lista.add(caneta);
 

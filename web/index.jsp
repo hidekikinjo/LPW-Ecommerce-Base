@@ -32,6 +32,7 @@
                  <div>
                     <h5> <%= p.getDescricao()%> </h5>
                     <p>  <%= p.getPreco()    %> </p>
+                    <img src="<%=p.getImagem()%>"></img>
                  </div>
    <%
         }
