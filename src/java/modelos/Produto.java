@@ -15,12 +15,13 @@ public class Produto {
     private String descricao;
     private float preco;
     private boolean oferta;
-    private static ArrayList<Produto> lista = new ArrayList();
-    
+    private String imagem;
+    public static ArrayList<Produto> lista = new ArrayList();
+
     public String getDescricao(){
         return this.descricao;
     }
-    
+
     public void setDescricao(String descricao){
         this.descricao = descricao;
     }
@@ -33,21 +34,30 @@ public class Produto {
         this.preco = preco;
     }
 
-    public static ArrayList<Produto> getLista() {
+    public ArrayList<Produto> getLista() {
         return lista;
     }
 
-    public static void setLista(ArrayList<Produto> lista) {
+    public void setLista(ArrayList<Produto> lista) {
         Produto.lista = lista;
     }
 
-    public boolean isOferta() {
+    public boolean getOferta() {
         return oferta;
     }
 
     public void setOferta(boolean oferta) {
         this.oferta = oferta;
     }
-        
-    
+
+   public String getImagem() {
+      return imagem;
+   }
+
+   public void setImagem(String imagem) {
+      this.imagem = imagem;
+   }
+
+
+
 }

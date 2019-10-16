@@ -35,8 +35,8 @@ public class Mock {
    private static void createProducts() {
      ArrayList<Produto> lista;
 
-      if (Produto.getLista() .isEmpty()){
-         lista = Produto.getLista ();
+      if (Produto.lista.isEmpty()){
+         lista = Produto.lista;
 
          Produto caneta = new Produto ();
          caneta.setDescricao("Caneta Bic");
